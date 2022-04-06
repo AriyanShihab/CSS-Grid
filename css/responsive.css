@@ -1,0 +1,24 @@
+@media only screen and (max-width: 1040px) {
+    .grid-container {
+        grid-template: repeat(3, 320px)/ repeat(2, 1fr);
+    }
+    .section2 {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 220px);
+        grid-template-areas: "tr tr1 tr2" "tr3 bl mt" "bc1 bc2 br";
+        width: 90vw;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .grid-container {
+        grid-template: repeat(6, 320px)/ repeat(1, 1fr);
+        min-width: 90vw;
+    }
+    .section2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 320px);
+        grid-template-areas: "tr" "tr1" "tr2" "tr3" "bl" "mt" "bc1" "bc2" "br";
+        width: 90vw;
+    }
+}
